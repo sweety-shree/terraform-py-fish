@@ -7,4 +7,3 @@ resource "aws_vpc" "vamsi" {
     Name = "vamsi-vpc"
   }
 }
-
