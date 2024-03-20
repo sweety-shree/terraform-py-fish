@@ -1,7 +1,7 @@
 resource "aws_instance" "fish" {
-  ami                         = "ami-04175dfed7619fb38"
-  instance_type               = "t3.micro"
-  key_name                    = "stockholm"
+  ami                         = "ami-0c7843ce70e666e51"
+  instance_type               = "t2.micro"
+  key_name                    = "oregon1"
   vpc_security_group_ids      = [aws_security_group.web-sg.id]
   subnet_id                   = aws_subnet.public-subnet1.id
   associate_public_ip_address = true
